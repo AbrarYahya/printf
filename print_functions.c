@@ -50,7 +50,7 @@ return (print_number(convert(l, 10, 0, params), params));
 */
 int print_string(va_list ap, params_t *params)
 {
-char *str = va_arg(ap, char *), pad _char = ' ';
+char *str = va_arg(ap, char *), pad_char = ' ';
 unsigned int pad = 0, sum = 0, i = 0, j;
 
 (void) params;
@@ -70,7 +70,7 @@ else
 sum += _puts(str);
 }
 while (j++ < params->width)
-sum += _putchar(pad_ char);
+sum += _putchar(pad_char);
 if (!params->minus_flag)
 {
 if (params->precision != UINT_MAX)

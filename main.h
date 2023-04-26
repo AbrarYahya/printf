@@ -38,19 +38,19 @@
 */
 typedef struct parameters
 {
-unsigned int unsign sug        : 1;
+unsigned int unsign        : 1;
 
 unsigned int plus_flag           : 1;
 unsigned int space_flag        : 1;
 unsigned int hashtag_flag     : 1;
-unsigned int zero flag            : 1;
+unsigned int zero_flag            : 1;
 unsigned int minus_flag        : 1;
 
 unsigned int  width;
 unsigned int precision;
 
 unsigned int h_modifier         : 1;
-unsigned int 1_modifier         : 1;
+unsigned int l_modifier         : 1;
 } params_t;
 
 /**
@@ -71,7 +71,7 @@ int _putchar(int c);
 /* print _functions.c module */
 int print_char(va_list ap, params_t *params);
 int print_int(va_list ap, params_t *params);
-int print_string(va_list ap, params _t * params);
+int print_string(va_list ap, params_t * params);
 int print_percent(va_list ap, params_t *params);
 int print_S(va_list ap, params_t *params);
 
