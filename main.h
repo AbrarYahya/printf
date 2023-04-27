@@ -19,7 +19,7 @@
 #define CONVERT_UNSIGNED          2
 
 /*
-*struct parameters
+*struct parameters - parameters struct
 *
 *@unsign: flag if unsigned value
 *
@@ -55,8 +55,8 @@ unsigned int l_modifier         : 1;
 
 /**
  *  struct specifier - struct token
-*   @specifier: format token
-  * @f: The function associated
+ *  @specifier: format token
+ * @f: The function associated
  */
 typedef struct specifier
 {
