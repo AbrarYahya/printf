@@ -18,13 +18,13 @@ int (*get_specifier(char *s))(va_list ap, params_t *params)
 		{"o", print_octal},
 		{"u", print_unsigned},
 		{"x", print_hex},
-		{"X", print_HEX},
+/**		{"X", print_HEX}, */ 
 		{"p", print_address},
 		{"S", print_S},
 		{"r", print_rev},
 		{"R", print_rot13},
 		{NULL, NULL}
-		 };
+		 }; 
 	int i = 0;
 
 	while (specifiers[i].specifier)
